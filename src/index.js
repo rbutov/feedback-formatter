@@ -1,7 +1,7 @@
-var fs = require("fs");
+const fs = require('fs');
 
-let FeedbackApp = require("./FeedbackApp.js");
-let feedbackApiData = JSON.parse(fs.readFileSync("feedback.json"));
+let FeedbackApp = require('./FeedbackApp.js');
+let feedbackApiData = JSON.parse(fs.readFileSync('feedback.json'));
 
 let app = new FeedbackApp();
 
