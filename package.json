@@ -5,11 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "mocha test/**/*.js"
+    "test": "mocha test/**/*.js",
+    "format": "prettier --write \"src/**/*.{js,ts,tsx}\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format-code": "npm run format && npm run lint:fix"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^6.2.1"
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "mocha": "^6.2.1",
+    "prettier": "^2.1.2"
   }
 }
